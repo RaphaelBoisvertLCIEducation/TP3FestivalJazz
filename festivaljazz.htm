@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival de Musique Jazz</title>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #000;
+        }
+
+        header {
+            background: #111;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('../images/background.jpg') no-repeat center center/cover;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background: red;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: darkred;
+        }
+
+        .local-talent, .sponsors, .programme, .billetterie, .contact {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .local-talent img {
+            width: 400px;
+            height: 400px;
+            margin: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .local-talent img:hover {
+            transform: scale(1.1);
+        }
+
+        .sponsor-logos img {
+            width: 100px;
+            margin: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label, form input, form select, form textarea {
+            margin: 10px 0;
+        }
+
+        form input, form select, form textarea {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .map img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        footer {
+            background: #111;
+            color: #888;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 100px;
+            }
+
+            .sponsor-logos img {
+                width: 80px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+  </style>
+  <style>
+                                 .hero h1 {
+            font-size: 3em; /* Ajustez la taille selon vos besoins */
+            margin-bottom: 20px; /* Espace entre le titre et le texte */
+        }
+
+        .hero p {
+            font-size: 1.5em; /* Ajustez la taille du texte du paragraphe */
+            line-height: 1.6; /* Améliore la lisibilité */
+            margin-bottom: 20px; /* Espace entre le texte et le bouton */
+        }
+
+        .hero .cta-button {
+            font-size: 1.2em; /* Ajustez la taille du texte du bouton */
+            padding: 10px 20px; /* Espace intérieur du bouton */
+        }
+  </style>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #000;
+        }
+
+        header {
+            background: #111;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .programme {
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .programme h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+        }
+
+        footer {
+            background: #111;
+            color: #888;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+  </style>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap')
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #000;
+        }
+
+        header {
+            background: #111;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .billetterie {
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .billetterie h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+        }
+
+        footer {
+            background: #111;
+            color: #888;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+  </style>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #000;
+        }
+
+        header {
+            background: #111;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact {
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .contact h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+        }
+
+        footer {
+            background: #111;
+            color: #888;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="../.png" width="150" height="256" alt="">
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Accueil</a>
+        </li>
+        <li>
+          <a href="../programme.html">Programme</a>
+        </li>
+        <li>
+          <a href="../billetterie.html">Billetterie</a>
+        </li>
+        <li>
+          <a href="../nous-joindre.html">Nous Joindre</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>L'événement musical Jazz de votre vie !</h1>
+      <p>Vos chansons préférées rempliront l'air&nbsp; et la joie dans votre cœur vous submergera à mesure que vous créerez plus de souvenirs durant ce festival de musique Jazz.</p><img src="../dolo-iglesias-z9z6u1rn7sY-unsplash.jpg" alt="dolo-iglesias-z9z6u1rn7sY-unsplash" width="1500"> <a href="../billetterie.html" class="cta-button">&nbsp; RÉSERVEZ MAINTENANT&nbsp;&nbsp;</a>
+    </section>
+    <section class="local-talent">
+      <h2>Découvrez les Talents Locaux</h2><img src="../Andre3000.jpg" alt="Andre3000">
+      <p>André 3000</p><img src="../Norah Jones.jpg" alt="Norah Jones">
+      <p>Norah Jones</p><img src="../Hiatus Kaiyote.jpg" alt="Hiatus Kaiyote">
+      <p>Hiatus Kaiyote</p><img src="../Laufey.jpg" alt="Laufey">
+      <p>Laufey</p><img src="../Robert Glasper.jpg" alt="Robert Glasper">
+      <p>Robert Glasper</p>
+    </section>
+    <section class="sponsors">
+      <h2>Nos Commanditaires</h2><img src="../logoQuebecPNG.png" width="200" height="200" alt="logo.canada"> <img src="../quebecPNG.png" width="200" height="200" alt="logo.quebec"> <img src="../terrebonnePNG.png" width="200" height="200" alt="logo.terrebonne"> <img src="../desjardinPNG.png" width="200" height="200" alt="desjardinPNG"> <img src="../logo lotoquebec.png" width="146" height="203" alt="logo.lotoquebec"> <img src="../guruPNG.png" width="200" height="200" alt="logo.guru">
+      <div class="sponsor-logos">
+        <br>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Festival de Musique Jazz. Tous droits réservés.</p>
+    <p>&nbsp;</p><img src="../.png" width="150" height="256" alt="">
+  </footer>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme du Festival</title>
+  </head>
+  <header>
+<nav>
+    <ul>
+        <li>
+          <a href="../index.html">Accueil</a>
+        </li>
+        <li>
+          <a href="../programme.html">Programme</a>
+        </li>
+        <li>
+          <a href="../billetterie.html">Billetterie</a>
+        </li>
+        <li>
+          <a href="../nous-joindre.html">Nous Joindre</a>
+        </li>
+    </ul>
+    </nav>
+</header>
+  <section class="programme">
+    <h1>Programme de l'Événement</h1>
+    <p>Découvrez les horaires et les groupes qui se produiront pendant le festival.</p>
+    <ul>
+      <li>Jour 1: André 3000, Norah Jones</li>
+      <li>Jour 2: Hiatus Kaiyote, Laufey</li>
+      <li>Jour 3:&nbsp;Robert Glasper</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.9118796725106!2d-73.6393149999994!3d45.6927404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8de45d64c13b5%3A0xee356d390ee419fc!2s%C3%8Ele-des-Moulins!5e0!3m2!1sfr!2sca!4v1723251382936!5m2!1sfr!2sca" width="1000" height="600" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </ul>
+  </section>
+  <footer>
+    <p>© 2024 Festival de Musique Jazz. Tous droits réservés.</p>
+  </footer>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetterie</title>
+  </head>
+  <header>
+    <img src="../.png" alt="Logo du Festival" class="logo">
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Accueil</a>
+        </li>
+        <li>
+          <a href="../programme.html">Programme</a>
+        </li>
+        <li>
+          <a href="../billetterie.html">Billetterie</a>
+        </li>
+        <li>
+          <a href="../nous-joindre.html">Nous Joindre</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="billetterie">
+    <h1>Achetez vos Billets</h1>
+   
+    <p>Réservez vos billets pour le festival maintenant !</p>
+    <p><strong>20$</strong> par personne / Non remboursable&nbsp;</p>
+<form>
+    <label for="nom">Nom :</label> <input type="text" id="nom" name="nom" required=""> <label for="email">Email :</label> <input type="email" id="email" name="email" required=""> <label for="nombre">Nombre de billets :</label> <select id="nombre" name="nombre">
+      <option value="1">
+        1
+      </option>
+      <option value="2">
+        2
+      </option>
+      <option value="3">
+        3
+      </option>
+      <option value="4">
+        4
+      </option>
+      </select> <button type="submit">Réserver</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2024 Festival de Musique Jazz. Tous droits réservés.</p>
+  </footer>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Joindre</title>
+  </head>
+  <header>
+    <img src="../.png" alt="Logo du Festival" class="logo">
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Accueil</a>
+        </li>
+        <li>
+          <a href="../programme.html">Programme</a>
+        </li>
+        <li>
+          <a href="../billetterie.html">Billetterie</a>
+        </li>
+        <li>
+          <a href="../nous-joindre.html">Nous Joindre</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="contact">
+    <h1>Nous Joindre</h1>
+    <p>Pour toute question, veuillez remplir le formulaire ci-dessous.</p>
+    <form>
+      <label for="nom">Nom :</label> <input type="text" id="Nom" name="nom" required=""> <label for="email">Email :</label> <input type="email" id="Email" name="email" required=""> <label for="message">Message :</label> 
+      <textarea id="message" name="message" rows="5" required=""></textarea> <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2024 Festival de Musique Jazz. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
